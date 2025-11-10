@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Slamm Store — Paket Akrab XL</title>
+  <style>
+    :root {
+      --xl-blue:#0039A6;
+      --xl-cyan:#00B2FF;
+      --xl-lime:#8BE000;
+      --bg-dark:#0A0F1E;
+      --card-dark:#0F1730;
+      --text-dark:#EAF2FF;
+      --bg-light:#ffffff;
+      --card-light:#f5f7fa;
+      --text-light:#1a1a1a;
+    }
+    body {
+      margin:0;font-family:Segoe UI,Arial,sans-serif;
+      background:var(--bg-dark);color:var(--text-dark);
+      transition:background .3s,color .3s;
+    }
+    body.light {
+      background:var(--bg-light);color:var(--text-light);
+    }
+    .nav {
+      display:flex;justify-content:space-between;align-items:center;
+      padding:12px 24px;
+      background:linear-gradient(90deg,var(--xl-blue),var(--xl-cyan));
+      color:#fff;
+    }
+    .brand {font-weight:700;font-size:18px}
+    .toggle {cursor:pointer;padding:6px 12px;border-radius:6px;background:rgba(255,255,255,0.2)}
+    .container {max-width:1100px;margin:auto;padding:24px}
+    h2 {margin-top:0}
+    .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+    .card {
+      border-radius:12px;padding:16px;
+      background:var(--card-dark);color:var(--text-dark);
+      transition:background .3s,color .3s;
+    }
+    body.light .card {background:var(--card-light);color:var(--text-light)}
+    .title {font-weight:700;font-size:16px}
+    .subtitle {font-size:14px;margin-bottom:8px}
+    .price {font-size:18px;font-weight:700;margin-bottom:8px}
+    .btn {
+      display:inline-block;padding:10px 14px;border-radius:8px;
+      background:linear-gradient(90deg,var(--xl-blue),var(--xl-cyan));
+      color:#fff;font-weight:600;text-decoration:none;
+    }
+    footer {margin-top:24px;padding:16px;text-align:center;font-size:12px;color:#aaa}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">Slamm Store</div>
+    <div class="toggle" id="modeToggle">🌙/☀️</div>
+  </nav>
+  <main class="container">
+    <h2>Paket Circle</h2>
+    <div class="grid">
+      <div class="card"><div class="title">CL 1</div><div class="subtitle">8–10 GB</div><div class="price">25k</div><a class="btn" data-msg="order CL 25k">Order</a></div>
+      <div class="card"><div class="title">CL 2</div><div class="subtitle">12–15 GB</div><div class="price">30k</div><a class="btn" data-msg="order CL 30k">Order</a></div>
+      <div class="card"><div class="title">CL 3</div><div class="subtitle">17–20 GB</div><div class="price">35k</div><a class="btn" data-msg="order CL 35k">Order</a></div>
+      <div class="card"><div class="title">CL 4</div><div class="subtitle">22–25 GB</div><div class="price">40k</div><a class="btn" data-msg="order CL 40k">Order</a></div>
+      <div class="card"><div class="title">CL 5</div><div class="subtitle">27–30 GB</div><div class="price">45k</div><a class="btn" data-msg="order CL 45k">Order</a></div>
+      <div class="card"><div class="title">CL 6</div><div class="subtitle">32–35 GB</div><div class="price">52k</div><a class="btn" data-msg="order CL 52k">Order</a></div>
+      <div class="card"><div class="title">CL 7</div><div class="subtitle">37–40 GB</div><div class="price">58k</div><a class="btn" data-msg="order CL 58k">Order</a></div>
+      <div class="card"><div class="title">CL 8</div><div class="subtitle">42–45 GB</div><div class="price">65k</div><a class="btn" data-msg="order CL 65k">Order</a></div>
+      <div class="card"><div class="title">CL 9</div><div class="subtitle">47–50 GB</div><div class="price">70k</div><a class="btn" data-msg="order CL 70k">Order</a></div>
+    </div>
+
+    <h2 style="margin-top:32px">Paket Akrab</h2>
+    <div class="grid">
+      <div class="card"><div class="title">Akrab S</div><div class="subtitle">30–35 GB</div><div class="price">45k</div><a class="btn" data-msg="order Akrab 45k">Order</a></div>
+      <div class="card"><div class="title">Akrab M</div><div class="subtitle">48–53 GB</div><div class="price">60k</div><a class="btn" data-msg="order Akrab 60k">Order</a></div>
+      <div class="card"><div class="title">Akrab M+</div><div class="subtitle">55–60 GB</div><div class="price">65k</div><a class="btn" data-msg="order Akrab 65k">Order</a></div>
+      <div class="card"><div class="title">Akrab L</div><div class="subtitle">65–70 GB</div><div class="price">70k</div><a class="btn" data-msg="order Akrab 70k">Order</a></div>
+      <div class="card"><div class="title">Akrab XL</div><div class="subtitle">80–85 GB</div><div class="price">80k</div><a class="btn" data-msg="order Akrab 80k">Order</a></div>
+      <div class="card"><div class="title">Akrab XXL</div><div class="subtitle">105–110 GB</div><div class="price">93k</div><a class="btn" data-msg="order Akrab 93k">Order</a></div>
+    </div>
+
+    <h2 style="margin-top:32px">Info</h2>
+    <ul>
+      <li>Circle tidak menambah masa aktif</li>
+      <li>Wajib punya aplikasi MyXL terbaru</li>
+      <li>Tanpa OTP</li>
+      <li>Garansi • Resmi • MyXL/AXIS</li>
+      <li>Masa aktif 26–28 hari</li>
+    </ul>
+  </main>
+  <footer>© 2025 Slamm Store — Tampilan mirip XL untuk konsistensi visual</footer>
+
+  <script>
+    const WA_NUMBER = "6285726936088";
+    document.querySelectorAll('.btn[data-msg]').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        const msg = encodeURIComponent(btn.getAttribute('data-msg'));
+        const url = `https://wa.me/${WA_NUMBER}?text=${msg}`;
+        window.open(url,'_blank');
+      });
+    });
+    document.getElementById('modeToggle').addEventListener('click',()=>{
+      document.body.classList.toggle('light');
+    });
+  </script>
+</body>
+</html>
